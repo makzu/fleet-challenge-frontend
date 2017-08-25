@@ -41,4 +41,4 @@ Please create a Rails app that stores and looks up rates from shipping service p
   some_model.common_amount # => 35.43 USD
   ```
 
-Please send this to __ via email.
+When you are done, please email your repo to engineering@tryfleet.com. If you need to clarify anything regarding this challenge, feel free to email us there too.
