@@ -18,7 +18,7 @@ Please create a Rails app that stores and looks up rates from shipping service p
   * Destination, as two-letter country code
 
 * Means of loading the attached data into a data store. We are not looking for a UI for this, console is fine.
-* The converted monetary amounts all should be stored, in case we'd want to query them.
+* The converted monetary USD amounts all should be stored, in case we'd want to query them.
 * A UI consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD. Above this list, a form that allows picking an origin & destination. Submitting this filters the list of rates by the selected origin and destination.  For instance, if I picked US and CN, I should only see rates with an origin of US and a destination of CN.
 * Form that allows editing and updating a rate, accessible from the main list. Again, bare-bones, do not worry about making it pretty.  Allow changing all attributes except the common USD rate.
 * Implement a reusable way to ensure that whenever a configurable money column is assigned, that same amount is also set as the other amount, but converted to USD. It should be easy to include this functionality into any other model that works with currency. Bring this functionality into both the shipping rate model and the shipping service provider model. This is an example of how it should behave:
