@@ -70,4 +70,8 @@ npm i
 npm run start
 ```
 
+We encourage you to demonstrate your workflow via Git commits with good messages.
+
+We do not expect you to write tests for this in the interest of time.
+
 When you are done, please either zip up your repo and email it to engineering@tryfleet.com or push it up to Github. If you need to clarify anything regarding this challenge, feel free to email us.
