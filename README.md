@@ -50,7 +50,7 @@ Please create a Rails app that stores and looks up rates from shipping service p
 
 We have created a bare-bones Vue and React app in directories `vue-spa` and `react-spa`. Please choose **either** and create a simple index view consisting of a list of all rates showing provider's name, origin, destination, nicely formatted rate as a monetary value, and nicely formatted common rate in USD.
 
-Since this is a back-end challenge, we aren't looking for anything more complex than fetching this data on page load.
+Since this is a back-end challenge, we aren't looking for anything more complex than fetching this data from the Rails app on page load.
 
 That said, bonus points for adding an extra filter: Above this list, implement a form that allows picking an origin & destination. Submitting this filters the list of rates by the selected origin and destination.  For instance, if I picked US and CN, I should only see rates with an origin of US and a destination of CN.
 
