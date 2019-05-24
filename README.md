@@ -1,6 +1,6 @@
 # Fleet Backend Code Challenge
 
-Our codebase is mainly made up of two repos, one for Rails and one for Vue. The Rails side primarily exposes an API consumed by the Vue app. This code challenge is intended to reflect that. We'd like you to build a Rails application with a few key components to demonstrate proficiency in many common Ruby and Rails patterns, which you'll find yourself using day-to-day here. We'd also like to have a front-end framework consume data exposed by your Rails app.
+Our codebase is mainly made up of two repos, one for Rails and one for Vue. The Rails side primarily exposes an API consumed by the Vue app. This code challenge is intended to reflect that. We'd like you to build a Rails application with a few key components to demonstrate proficiency in many common Ruby and Rails patterns, which you'll find yourself using day-to-day here. We'd also like you to hit the Rails app from a simple front-end app.
 
 Though each engineer does specialize in either front-end or back-end, we still sometimes have full-stack responsibilities. So we'd also like you to implement some basic functionality in either the given Vue app or React app.
 
