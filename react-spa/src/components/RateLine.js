@@ -13,7 +13,6 @@ export default function RateLine({ rate }) {
   return (
     <li>
       <div>{rate.name}</div>
-      {/* The spacing here leaves a lot to be desired! */}
       <div>
         {rate.origin} - {rate.destination}
       </div>

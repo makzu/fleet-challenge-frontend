@@ -11,11 +11,21 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+ul > :nth-child(even) {
+  background-color: #eee;
+}
 
 li {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
+}
+li div {
+  flex: 1;
+}
+li :first-child {
+  flex: 2;
+  text-align: left;
 }
 
 .title {
@@ -23,4 +33,9 @@ li {
   border-bottom: 1px solid #c0c0c0;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+.filters {
+  float: right;
+  text-align: right;
 }
