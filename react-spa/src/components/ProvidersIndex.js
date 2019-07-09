@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import RateLine from './RateLine.js'
+import RateFilter from './RateFilter.js'
 
 const useApiFetch = () => {
   const [rates, setRates] = useState([])
@@ -27,12 +28,33 @@ function ProvidersIndex() {
   const [originFilter, setOriginFilter] = useState('')
   const [destFilter, setDestFilter] = useState('')
 
-  const filteredRates = rates.map(rate => (
-    <RateLine rate={rate} key={rate.id} />
-  ))
+  const filteredRates = rates.map(rate => {
+    if (originFilter !== '' && rate.origin !== originFilter) return null
+    if (destFilter !== '' && rate.destination !== destFilter) return null
+
+    return <RateLine rate={rate} key={rate.id} />
+  })
 
   return (
     <div className="ProvidersIndex">
+      <div className="filters">
+        <div>
+          Origins&nbsp;
+          <RateFilter
+            options={origins}
+            current={originFilter}
+            setFilter={setOriginFilter}
+          />
+        </div>
+        <div>
+          Destinations&nbsp;
+          <RateFilter
+            options={destinations}
+            current={destFilter}
+            setFilter={setDestFilter}
+          />
+        </div>
+      </div>
       <h2>Providers</h2>
       <ul>
         <li className="title">
